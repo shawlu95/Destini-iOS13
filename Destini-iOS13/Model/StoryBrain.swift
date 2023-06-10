@@ -8,4 +8,20 @@
 
 import Foundation
 
+struct StoryBrain {
+    
+    let idx = 0
+    let stories = [
+        Story(
+            story: "You see a fork in the road.",
+            choice1: "Take a left.",
+            choice2: "Take a right."
+        ),
+    ]
+    
+    func getStory() -> Story {
+        return stories[idx]
+    }
+}
+
 
