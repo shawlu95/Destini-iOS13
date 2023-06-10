@@ -25,15 +25,12 @@ class ViewController: UIViewController {
         let choice = sender.titleLabel?.text
         storyBrain.makeChoice(choice!)
         updateStory()
-    
     }
     
     func updateStory() {
-        let story = storyBrain.getStory()
-        storyLabel.text = story.title
-        choice1Button.setTitle(story.choice1, for: .normal)
-        choice2Button.setTitle(story.choice2, for: .normal)
+        storyLabel.text = storyBrain.getTitle()
+        choice1Button.setTitle(storyBrain.getChoice1(), for: .normal)
+        choice2Button.setTitle(storyBrain.getChoice2(), for: .normal)
     }
-    
 }
 

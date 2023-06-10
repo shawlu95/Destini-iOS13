@@ -44,8 +44,16 @@ struct StoryBrain {
         )
     ]
     
-    func getStory() -> Story {
-        return stories[idx]
+    func getTitle() -> String {
+        return stories[idx].title
+    }
+    
+    func getChoice1() -> String {
+        return stories[idx].choice1
+    }
+    
+    func getChoice2() -> String {
+        return stories[idx].choice2
     }
     
     mutating func makeChoice(_ choice: String) {
