@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     func updateStory() {
         let story = storyBrain.getStory()
-        storyLabel.text = story.story
+        storyLabel.text = story.title
         choice1Button.setTitle(story.choice1, for: .normal)
         choice2Button.setTitle(story.choice2, for: .normal)
     }
